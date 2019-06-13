@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" android:id="@+id/cardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/clContainer"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:text="tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/lenmon"
+                android:id="@+id/tvType"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"/>
+        <TextView
+                android:text="tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDistance"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/roboto"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvSeatCount" android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:text="tvModel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvModel" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp" app:layout_constraintTop_toBottomOf="@+id/tvType"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/tvDistance" android:layout_marginEnd="8dp"/>
+        <TextView
+                android:text="tvLicensePlate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLicensePlate"
+                app:layout_constraintTop_toBottomOf="@+id/tvRentalPriceInParking"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/tvDistance" android:layout_marginEnd="8dp"/>
+        <TextView
+                android:text="tvSeatCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSeatCount"
+                app:layout_constraintTop_toBottomOf="@+id/tvLicensePlate"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp" app:layout_constraintEnd_toStartOf="@+id/tvDistance"/>
+        <TextView
+                android:text="tvFulltype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFulltype"
+                app:layout_constraintTop_toBottomOf="@+id/tvModel"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/tvDistance" android:layout_marginEnd="8dp"/>
+        <TextView
+                android:text="tvTansmision"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTransmision"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+                android:text="tvRentalPriceInUse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRentalPriceInUse" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvFulltype"
+                app:layout_constraintEnd_toStartOf="@+id/tvDistance" android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"/>
+        <TextView
+                android:text="tvRentalPriceInParking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRentalPriceInParking" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRentalPriceInUse"
+                android:layout_marginStart="24dp" app:layout_constraintEnd_toStartOf="@+id/tvDistance"
+                android:layout_marginEnd="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

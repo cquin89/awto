@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_graph"
+            app:startDestination="@id/vehicleListFragment2">
+    <fragment android:id="@+id/vehicleListFragment2" android:name="com.losingtimeapps.testawto.presentation.ui.vehiclelist.VehicleListFragment"
+              android:label="fragment_vehicle_list2" tools:layout="@layout/fragment_vehicle_list"/>
+</navigation>
